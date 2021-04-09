@@ -5,6 +5,10 @@ I refuctored my Java solution for the Guitar Shack exercise into a Big Ball of M
 
 There are, of course, no automated tests. But there's a Program.main() method you can run with 2 arguments to process a sale: product ID (int) and quantity sold (int).
 
+```
+gw run --args="1 1"
+```
+
 The program will check stock and sales data from two AWS web services to decide if an alert needs to be sent to reorder new stock.
 
 The Guitar Shack owner wants to change the logic of how we calculate the reorder level for a product. Currently it uses the rate of sales during the previous 30 days.

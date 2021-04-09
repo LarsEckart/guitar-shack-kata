@@ -1,0 +1,31 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation("com.google.code.gson:gson:2.8.6")
+    testImplementation(platform("org.junit:junit-bom:5.7.1"))
+    testImplementation("org.junit.jupiter:junit-jupiter")
+    testImplementation("com.approvaltests:approvaltests:10.3.0")
+    testImplementation("org.mockito:mockito-core:3.9.0")
+}
+
+group = 'com.guitarshack'
+version = '1.0-SNAPSHOT'
+description = 'guitarshack'
+
+application {
+    mainClass = 'com.guitarshack.Program'
+}
+
+test {
+    useJUnitPlatform()
+    testLogging {
+        events "passed", "skipped", "failed"
+    }
+}
