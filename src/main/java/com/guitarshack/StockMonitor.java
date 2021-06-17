@@ -22,7 +22,7 @@ public class StockMonitor {
     }
 
     public void productSold(int productId, int quantity) {
-        String baseURL = "https://6hr1390c1j.execute-api.us-east-2.amazonaws.com/default/product";
+        String baseURL = "https://micronaut.herokuapp.com/default/product";
         Map<String, Object> params = new HashMap<>() {{
             put("id", productId);
         }};
@@ -62,7 +62,7 @@ public class StockMonitor {
             paramString1 += key + "=" + params1.get(key).toString() + "&";
         }
         HttpRequest request1 = HttpRequest
-                .newBuilder(URI.create("https://gjtvhjg8e9.execute-api.us-east-2.amazonaws.com/default/sales" + paramString1))
+                .newBuilder(URI.create("https://micronaut.herokuapp.com/default/sales" + paramString1))
                 .build();
         String result1 = "";
         HttpClient httpClient1 = HttpClient.newHttpClient();
