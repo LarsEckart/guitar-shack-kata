@@ -1,3 +1,5 @@
+![Test Status](../../workflows/test/badge.svg)
+
 # guitar_shack_legacy_java
 "Legacy code" version of the Guitar Shack implementation for folk to practice on
 
