@@ -9,7 +9,7 @@ repositories {
 
 dependencies {
     implementation("com.google.code.gson:gson:2.9.0")
-    testImplementation(platform("org.junit:junit-bom:5.8.2"))
+    testImplementation(platform("org.junit:junit-bom:5.9.0"))
     testImplementation("org.junit.jupiter:junit-jupiter")
     testImplementation("com.approvaltests:approvaltests:17.1.0")
     testImplementation("org.mockito:mockito-core:4.6.1")
